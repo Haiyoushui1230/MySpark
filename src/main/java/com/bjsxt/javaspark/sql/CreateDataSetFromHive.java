@@ -10,6 +10,7 @@ public class CreateDataSetFromHive {
                 .builder()
                 .appName("JavaSparkHive")
                 .master("local")
+
 //                .config("spark.sql.warehouse.dir", warehouseLocation)
                 .config("hive.metastore.uris","thrift://node03:9083")
                 .enableHiveSupport()
